@@ -4,14 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Health Assistant</title>
-<link rel="stylesheet" href="style.css">
 </head>
-<body>
-<h1>AI Health Assistant 🩺</h1>
-<input type="file" id="upload" accept="image/*">
-<input type="text" id="symptoms" placeholder="Enter symptoms">
+
+<body style="font-family:Arial;text-align:center;margin-top:50px;">
+
+<h1>AI Health Assistant</h1>
+
+<input type="file" id="upload" accept="image/*"><br><br>
+
+<input type="text" id="symptoms" placeholder="Enter symptoms"><br><br>
+
 <button onclick="predict()">Predict</button>
+
 <h2 id="result"></h2>
-<script src="script.js"></script>
+
+<script>
+function predict(){
+    const symptoms=document.getElementById("symptoms").value;
+
+    if(symptoms==""){
+        document.getElementById("result").innerHTML="Please enter symptoms";
+    }else{
+        document.getElementById("result").innerHTML="Possible illness detected. Please consult doctor.";
+    }
+}
+</script>
+
 </body>
 </html>
