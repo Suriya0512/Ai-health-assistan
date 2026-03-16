@@ -6,19 +6,12 @@
 <title>AI Health Assistant</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<h1>AI Health Assistant</h1>
-
+<h1>AI Health Assistant 🩺</h1>
 <input type="file" id="upload" accept="image/*">
-<input type="text" id="symptoms" placeholder="Enter symptoms:">
-
+<input type="text" id="symptoms" placeholder="Enter symptoms">
 <button onclick="predict()">Predict</button>
-
 <h2 id="result"></h2>
-
 <script src="script.js"></script>
-
 </body>
 </html>
